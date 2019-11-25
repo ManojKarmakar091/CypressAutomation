@@ -1,0 +1,8 @@
+{
+  "execTimeout": 200000,
+  "pageLoadTimeout": 200000,
+  "env": {
+    "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+  },
+  "projectId": "ncmyz6"
+}
