@@ -1,23 +1,18 @@
-class MyWishListsPage
+class MyWishListsPage {
 
-{
+  getProductName() {
 
-getProductName()
-{
+    return cy.get('#name')
+  }
 
-  return  cy.get('#name')
-}
+  clickWishListSaveButton() {
 
-clickWishListSaveButton()
-{
+    return cy.get('#submitWishlist > span')
+  }
 
-   return cy.get('#submitWishlist > span')
-}
-
-clickBackbuttonFromWishList()
-{
+  clickBackbuttonFromWishList() {
     return cy.get('.footer_links > :nth-child(1) > .btn > span')
-}
+  }
 
 
 }

@@ -1,14 +1,10 @@
-class CreditSlipsPage 
+class CreditSlipsPage {
 
+  getLabel() {
 
-{
+    return cy.get('.page-heading')
 
-getLabel()
-{
-
-  return cy.get('.page-heading')
-
-}
+  }
 
 
 }

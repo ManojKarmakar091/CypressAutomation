@@ -1,5 +1,23 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "firstname": "Bob",
+  "lastname": "Henry",
+  "company":"Glo",
+  "address1": "addess123",
+  "address2": "add123",
+  "city":"city123",
+  "state":"California",
+  "postalcode":32003,
+  "country":"United States",
+  "homephonenumber":9113952375,
+  "mobilephonenumber":7654321,
+  "additionalInfo":"abc",
+  "alias": "abcd",
+  "productName": "Blouse"
+ 
+
+
+
+
+
+ 
 }

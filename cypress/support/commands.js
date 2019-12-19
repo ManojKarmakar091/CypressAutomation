@@ -11,12 +11,37 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add("login", (email, password) => { ... })
-   Cypress.Commands.add("login", (email, password) => { 
-    cy.get('#email').type('manojkarmkar091@gmail.com')
-    cy.get('#passwd').type('Vicky8123')
+Cypress.Commands.add("login", (email, password) => {
+    cy.get('#email').type(email,{ log: false }).blur()
+    cy.get('#passwd').type(password, { log: false }).blur()
     cy.get('#SubmitLogin > span').click()
 
+});
+
+
+
+Cypress.Commands.add("selectProduct", (productName) => {
+
+    cy.get('.tab-content:visible').find('.product-container:visible').each(($el, index, $list) => {
+
+        const textProduct = $el.find('h5[itemprop="name"]:visible').text()
+
+        if (textProduct.includes(productName)) {
+
+            cy.get('.button.ajax_add_to_cart_button.btn.btn-default:visible').eq(index).click({ force: true })
+
+        }
+
     })
+
+
+
+})
+
+
+
+
+
 //
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })

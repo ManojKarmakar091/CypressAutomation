@@ -1,38 +1,38 @@
-class HomePage 
+class HomePage {
 
-{
+   getOrderHistoryLink() {
 
-getOrderHistoryLink()
-{
+      return cy.get(':nth-child(1) > .myaccount-link-list > :nth-child(1) > a > span')
+   }
 
-     return cy.get(':nth-child(1) > .myaccount-link-list > :nth-child(1) > a > span')
-}
+   getCreditSlipsLink() {
 
-getCreditSlipsLink()
-{
+      return cy.get('.myaccount-link-list > :nth-child(2) > a > span')
+   }
 
-   return cy.get('.myaccount-link-list > :nth-child(2) > a > span')
-}
+   get myAddressLink() {
 
-get myAddressLink()
-{
+      return cy.get('.myaccount-link-list > :nth-child(3) > a > span')
+   }
 
-   return cy.get('.myaccount-link-list > :nth-child(3) > a > span')
-}
+   getPersonalInformationLink() {
 
-getPersonalInformationLink()
-{
-
-   return cy.get('.myaccount-link-list > :nth-child(4) > a > span')
-}
+      return cy.get('.myaccount-link-list > :nth-child(4) > a > span')
+   }
 
 
-getMyWishListLink()
+   getMyWishListLink() {
 
-{
+      return cy.get('.lnk_wishlist > a > span')
+   }
 
-  return  cy.get('.lnk_wishlist > a > span')
-}
+   getMyAddresseLink() {
+
+      return cy.get('.myaccount-link-list > :nth-child(4) > a > span')
+
+   }
+
+
 }
 
 export default HomePage;

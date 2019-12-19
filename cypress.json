@@ -1,6 +1,11 @@
 {
-  "execTimeout": 200000,
-  "pageLoadTimeout": 200000,
+  "execTimeout": 10000,
+
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+
+  "pageLoadTimeout": 10000,
+  "reporter": "mochawesome",
   "env": {
     "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account"
   },
