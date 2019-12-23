@@ -1,13 +1,12 @@
 {
   "execTimeout": 10000,
-
-    "viewportWidth": 1024,
-    "viewportHeight": 768,
-
+  "viewportWidth": 1024,
+  "viewportHeight": 768,
   "pageLoadTimeout": 10000,
   "reporter": "mochawesome",
   "env": {
-    "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+    "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
+    "devurl": "http://google.com"
   },
   "projectId": "ncmyz6"
 }

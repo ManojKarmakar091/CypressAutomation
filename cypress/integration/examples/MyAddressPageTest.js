@@ -15,7 +15,11 @@ describe('My Second Test Suit', () => {
 
       cy.login(user.userEmail, user.userPassword);
     })
+    cy.fixture('example').then(function (data) {
+      this.data = data
   })
+  })
+  
   after(function () {
     cy.get('.logout').click()
   })
