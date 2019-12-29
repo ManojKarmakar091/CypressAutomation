@@ -1,23 +1,104 @@
 {
   "stats": {
-    "suites": 0,
+    "suites": 1,
     "tests": 0,
     "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2019-12-20T10:52:18.474Z",
-    "end": "2019-12-20T10:52:18.477Z",
-    "duration": 3,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "start": "2019-12-27T10:39:04.913Z",
+    "end": "2019-12-27T10:39:22.477Z",
+    "duration": 17564,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
   },
   "results": [
-    false
+    {
+      "uuid": "ed198bf3-7520-4640-8f66-b961649c0e0b",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf7f0477-9543-4f81-a3b8-e71c93073b33",
+          "title": "My First Test Suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Home Page(Order History) of the Application",
+              "fullTitle": "My First Test Suit Verify Home Page(Order History) of the Application",
+              "timedOut": null,
+              "duration": 2135,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var homePage = new _HomePage.default();\ncy.url().should('include', 'controller=my-account');\nhomePage.getOrderHistoryLink().click();\ncy.url().should('include', 'controller=history');\ncy.get('.page-heading').then(function (element) {\n  var actualText1 = element.text();\n  expect(actualText1.includes(this.data1.Orderhistory)).to.be.true;\n  cy.get('.footer_links > :nth-child(1) > .btn > span').click();\n});",
+              "err": {
+                "message": "CypressError: cy.click() failed because it requires a DOM element.\n\nThe subject received was:\n\n  > undefined\n\nThe previous command that ran was:\n\n  > cy.get()\n\nBecause this error occurred during a 'after each' hook we are skipping the remaining tests in the current suite: 'My First Test Suit'",
+                "estack": "CypressError: cy.click() failed because it requires a DOM element.\n\nThe subject received was:\n\n  > undefined\n\nThe previous command that ran was:\n\n  > cy.get()\n\nBecause this error occurred during a 'after each' hook we are skipping the remaining tests in the current suite: 'My First Test Suit'\n    at Object.cypressErr (http://automationpractice.com/__cypress/runner/cypress_runner.js:106136:11)\n    at Object.throwErr (http://automationpractice.com/__cypress/runner/cypress_runner.js:106091:18)\n    at Object.throwErrByPath (http://automationpractice.com/__cypress/runner/cypress_runner.js:106123:17)\n    at ensureElement (http://automationpractice.com/__cypress/runner/cypress_runner.js:94277:21)\n    at validateType (http://automationpractice.com/__cypress/runner/cypress_runner.js:94149:16)\n    at Object.ensureSubjectByType (http://automationpractice.com/__cypress/runner/cypress_runner.js:94177:9)\n    at pushSubjectAndValidate (http://automationpractice.com/__cypress/runner/cypress_runner.js:101061:15)\n    at Context.<anonymous> (http://automationpractice.com/__cypress/runner/cypress_runner.js:101347:18)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:100826:33\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:140400:23)\n    at Promise._settlePromiseFromHandler (http://automationpractice.com/__cypress/runner/cypress_runner.js:138336:31)\n    at Promise._settlePromise (http://automationpractice.com/__cypress/runner/cypress_runner.js:138393:18)\n    at Promise._settlePromiseCtx (http://automationpractice.com/__cypress/runner/cypress_runner.js:138430:10)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://automationpractice.com/__cypress/runner/cypress_runner.js:135130:12)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:135135:10)\n    at Async.drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:135009:14)",
+                "diff": null
+              },
+              "uuid": "a23c9ace-bcb7-4283-94a2-ed97eed706ab",
+              "parentUUID": "cf7f0477-9543-4f81-a3b8-e71c93073b33",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Home Page(Credit slips) of the Application",
+              "fullTitle": "My First Test Suit Verify Home Page(Credit slips) of the Application",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var homePage = new _HomePage.default();\ncy.url().should('include', 'controller=my-account');\nhomePage.getCreditSlipsLink().click();\ncy.url().should('include', 'controller=order-slip');\ncy.get('.page-heading').then(function (element) {\n  var actualText = element.text();\n  expect(actualText.includes(this.data2.Creditslips)).to.be.true;\n  cy.get('.footer_links > :nth-child(1) > .btn > span').click();\n});",
+              "err": {},
+              "uuid": "d663b071-499a-4c3b-bf29-1b5f6d4a46ac",
+              "parentUUID": "cf7f0477-9543-4f81-a3b8-e71c93073b33",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a23c9ace-bcb7-4283-94a2-ed97eed706ab"
+          ],
+          "pending": [],
+          "skipped": [
+            "d663b071-499a-4c3b-bf29-1b5f6d4a46ac"
+          ],
+          "duration": 2135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

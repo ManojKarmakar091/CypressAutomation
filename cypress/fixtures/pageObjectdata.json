@@ -1,0 +1,17 @@
+{
+    "HomePageUrl": "http://automationpractice.com/index.php?controller=my-account",
+    "Orderhistory": "Order history",
+    "OrderhistoryUlr":"http://automationpractice.com/index.php?controller=history",
+    "Creditslips": "credit slips",
+    "CreditslipsUrl": "http://automationpractice.com/index.php?controller=order-slip",
+    "productName": "Printed Chiffon Dress",
+    "shoppingSummaryUrl": "http://automationpractice.com/index.php?controller=order",
+    "AddressLabel": "Address",
+    "ShippingLabel": "Shipping",
+    "PaymentLabel": "Payment",
+    "PaymentType": "Check payment",
+    "OrderCompleteInfoText": "Your order on My Store is complete."
+
+
+   
+}

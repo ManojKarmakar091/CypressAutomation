@@ -31,7 +31,11 @@ class HomePage {
       return cy.get('.myaccount-link-list > :nth-child(4) > a > span')
 
    }
+getHomePageLabel(){
 
+
+   return cy.get('.navigation_page')
+}
 
 }
 

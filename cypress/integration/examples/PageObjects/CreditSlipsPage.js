@@ -1,8 +1,8 @@
 class CreditSlipsPage {
 
-  getLabel() {
+  backFromCreateSlipLabel() {
 
-    return cy.get('.page-heading')
+    return cy.get('.footer_links > :nth-child(1) > .btn > span')
 
   }
 

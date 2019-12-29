@@ -4,9 +4,10 @@
   "viewportHeight": 768,
   "pageLoadTimeout": 10000,
   "reporter": "mochawesome",
+  
   "env": {
-    "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
-    "devurl": "http://google.com"
+    "url": "http://automationpractice.com"
+   
   },
   "projectId": "ncmyz6"
 }
